@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252525"
+        tools:context=".MainActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ic_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="82dp"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bg_profile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/bg_radius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="도현욱"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_main"
+            app:layout_constraintStart_toEndOf="@+id/ic_profile"
+            app:layout_constraintTop_toTopOf="@+id/ic_profile" />
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="노력하는 android developer 도현욱 입니다"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_profile"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <ImageView
+            android:id="@+id/ic_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_home"
+            app:layout_constraintStart_toStartOf="@+id/ic_profile"
+            app:layout_constraintTop_toBottomOf="@+id/ic_profile" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="대구 소프트웨어 마이스터 고등학교 2학년"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_home"
+            app:layout_constraintTop_toTopOf="@+id/ic_home" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_insta"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_insta"
+            app:layout_constraintStart_toStartOf="@id/ic_home"
+            app:layout_constraintTop_toBottomOf="@+id/ic_home" />
+
+        <TextView
+            android:id="@+id/tv_insta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="wsiwsiwsi123"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_insta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_home"
+            app:layout_constraintTop_toTopOf="@+id/btn_insta" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_github"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_github"
+            app:layout_constraintEnd_toEndOf="@id/btn_insta"
+            app:layout_constraintStart_toStartOf="@id/ic_home"
+            app:layout_constraintTop_toBottomOf="@id/btn_insta" />
+
+        <TextView
+            android:id="@+id/tv_github"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="wsi1212"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_github"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_home"
+            app:layout_constraintTop_toTopOf="@+id/btn_github" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ic_discord"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_discord"
+            app:layout_constraintTop_toBottomOf="@id/btn_github"
+            app:layout_constraintStart_toStartOf="@id/ic_home"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_discord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="wsi1212 #9580"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_discord"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ic_home"
+            app:layout_constraintTop_toTopOf="@+id/ic_discord"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ic_email"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/ic_discord"
+            app:layout_constraintStart_toStartOf="@id/ic_home"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/ic_email"
+            />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="wsi1212@dgsw.hs.kr"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ic_home"
+            app:layout_constraintTop_toTopOf="@+id/ic_email"
+             />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
