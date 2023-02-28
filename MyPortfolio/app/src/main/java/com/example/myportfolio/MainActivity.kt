@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myportfolio.databinding.ActivityMainBinding
 
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +36,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(browserIntent)
         }
 
+        binding.tvNotion.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.notion.so/9fd7e00ba1154cb1860551f7683b597c?pvs=4"))
+            startActivity(browserIntent)
+        }
 
-
+        binding.icNotion.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.notion.so/9fd7e00ba1154cb1860551f7683b597c?pvs=4"))
+            startActivity(browserIntent)
+        }
     }
 }
